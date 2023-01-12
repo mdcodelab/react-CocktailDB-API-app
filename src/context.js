@@ -5,11 +5,10 @@ import { withRouter } from "react-router-dom";
 const AppContext=React.createContext();
 
 const AppProvider = ({children}) => {
-  const[dark, setDark]=React.useState(false);
   
   
   
-  return <AppContext.Provider >
+  return <AppContext.Provider value="hello">
 
     {children}
   </AppContext.Provider>
