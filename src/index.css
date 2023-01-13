@@ -289,39 +289,85 @@ Cocktail
   display: flex;
   flex-wrap: wrap;
   height: 100%;
-  max-width: 50rem;
+  max-width: 70rem;
+  margin: 0 auto;
   height: 100%;
   margin: 0 auto;
-  border: 2px solid red;
   align-items: center;
   justify-content: center;
 }
+
 .drink {
-  width: 20rem;
-  height: 22rem;
-  text-align: left;
+  width: 17rem;
+  height: 25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   box-shadow: 2px 3px 4px #555;
   border-radius: 5px;
-  margin: 2rem 2rem;
-
+  margin: 1.5rem 1.5rem;
 }
-.img-drink {
+
+.drink-img {
 width: 100%;
-height: 75%;
+height: 65%;
 }
 
-.img-drink img {
+.drink-img img {
   display: block;
-  width: 100%;
-  height: 100%;
+  width: 100%; height: 100%;
   object-fit: cover;
 }
 
-.cocktail-footer {
+.drink-footer {
+  height: 25%;
   width: 100%;
   text-align: center;
-  line-height: 0.5rem;
-  padding: 1rem 0;
+  padding: 0.5rem 0;
+  font-size: 15px;
+}
+
+.drink p, .drink h3, .drink h4{
+  margin: 0; padding: 0;
+}
+
+/*
+====== 
+SearchForm
+======
+*/
+.search {
+  margin-top: 1rem;
+  padding-bottom: 0;
+}
+
+.search-form {
+  width: var(--smallWidth);
+  margin: 0 auto;
+  max-width: var(--maxWidth);
+  background: var(--mainWhite);
+  padding: 2rem 2.5rem;
+  text-transform: capitalize;
+  border-radius: var(--mainBorderRadius);
+  box-shadow: var(--lightShadow);
+}
+
+.form-control label {
+  display: block;
+  margin-bottom: 1.25rem;
+  font-weight: bold;
+  letter-spacing: 0.25rem;
+  color: var(--primaryColor);
+}
+.form-control input {
+  width: 100%;
+  border: none;
+  border-color: transparent;
+  background: var(--mainBackground);
+  border-radius: var(--mainBorderRadius);
+  padding: 0.5rem;
+  font-size: 1.2rem;
 }
 
 

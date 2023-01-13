@@ -34,7 +34,7 @@ const AppProvider = ({children}) => {
     }
   }
 
-  React.useState(() => {
+  React.useEffect(() => {
     fetchData();
   }, [searchTerm])
   
