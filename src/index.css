@@ -275,6 +275,57 @@ section {
   }
 }
 
+/* 
+====== 
+Cocktail
+======
+*/
+
+.cocktail-section {
+  text-align: center;
+}
+
+.cocktails-center {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+  max-width: 50rem;
+  height: 100%;
+  margin: 0 auto;
+  border: 2px solid red;
+  align-items: center;
+  justify-content: center;
+}
+.drink {
+  width: 20rem;
+  height: 22rem;
+  text-align: left;
+  box-shadow: 2px 3px 4px #555;
+  border-radius: 5px;
+  margin: 2rem 2rem;
+
+}
+.img-drink {
+width: 100%;
+height: 75%;
+}
+
+.img-drink img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cocktail-footer {
+  width: 100%;
+  text-align: center;
+  line-height: 0.5rem;
+  padding: 1rem 0;
+}
 
 
-  
+
+
+
+
