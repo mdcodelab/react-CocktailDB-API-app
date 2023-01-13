@@ -1,6 +1,7 @@
 import { findAllByDisplayValue } from "@testing-library/react";
 import React from "react";
 import { withRouter } from "react-router-dom";
+import {useCallback} from "react";
 
 const AppContext=React.createContext();
 const url = "https://www.thecocktaildb.com/api/json/v1/1/search.php?s=";
@@ -11,7 +12,9 @@ const AppProvider = ({children}) => {
   const[cocktails, setCocktails]=React.useState([]);
   console.log(cocktails);
 
-  const fetchData = async () => {
+
+  const fetchData = useCallback(async () => {
+    //when the searchTerm changes then, create it from the scratch-useCallback
     setLoading(true);
     try {
       const response = await fetch(`${url}${searchTerm}`);
@@ -33,6 +36,7 @@ const AppProvider = ({children}) => {
       setLoading(false);
     }
   }
+)
 
   React.useEffect(() => {
     fetchData();

@@ -370,6 +370,20 @@ SearchForm
   font-size: 1.2rem;
 }
 
+/*
+================
+SingleCocktail
+*/
+.singlecocktail {
+  width: 25rem;
+  height: 45rem;
+  margin:0 auto;}
+
+.singledrink {
+  margin: 0 auto;
+  height: 30rem;
+}
+
 
 
 
